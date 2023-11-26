@@ -1,0 +1,213 @@
+<html>
+<head>
+<style>
+/* RESET */
+
+
+
+/* COLORS and FONTS */
+body {
+    color:blue;
+    font-size: 24px;
+    line-height: 1.5;
+    background-image: url('images/tetr.png');
+    background-size: 25%;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.navbar {    
+
+    color:black;
+    display: flex;
+    justify-content:flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+}
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+
+.botton{
+    right:15;
+    bottom: 15;
+
+    position: fixed;
+}
+
+
+header {
+    font-size: 50px;
+    text-align: center;
+}
+main {
+    
+}
+footer {
+    font-size: 50px;
+    text-align: center;
+}
+.left-sidebar {
+    display: flex;
+    justify-content:flex-start;
+    align-items: flex-end;
+    flex-direction: column;
+    background: rgb(10, 231, 147);
+}
+.left-sidebar {
+    color:black;
+    display: flex;
+    justify-content:flex-start;
+    align-items: flex-end;
+    flex-direction: column;
+    background: rgb(10, 231, 147);
+}
+
+.right-sidebar {
+    background: rgb(10, 231, 147);
+}
+.container {
+    display: flex;
+    flex-direction: column;
+}
+.heading{
+    font-size: larger;
+}
+.fixing{
+    position: fixed;
+}
+
+
+@media all and (min-width: 768px) {
+ .container {
+    flex-direction:row;
+    flex-wrap: wrap;
+ }
+ header,
+ footer {
+    width: 100%;
+ }
+ main {
+    flex:4 ;
+    order: 3;
+    min-height: 80vh;
+ }
+
+ .left-sidebar {
+    order: 1;
+    flex: 1;
+ }
+
+ .right-sidebar {
+    flex: 1;
+    order: 4;
+ }
+ footer {
+    order: 5;
+ }
+}
+
+.fig {
+    text-align: center; /* Выравнивание по центру */ 
+
+}
+
+.board{
+
+    border: 5px solid blue;
+}
+.rightimg  {
+
+    border: 5px solid blue;
+    float: right; /* Выравнивание по правому краю  */ 
+    margin: 7px 0 7px 7px; /* Отступы вокруг картинки */
+   }
+
+
+</style>
+</head>
+<body>
+
+
+
+<div class="container">
+ <header>
+    <p1 id="UP">Доимашняя работа</p1>
+    
+ </header>
+ <main>
+    <p id="about">
+        <div class="heading">О сайте:</div>
+
+        <img src="images/Homework.jpg" width=40% height=auto class="rightimg">
+        Домашняя работа — важная часть нашей учебы. Без нее практически невозможно научиться чему-либо.
+        Эта страница посвещена как раз важности домашних работ, преимуществам и недостаткам, которые онa предлагает.
+        
+    </p>
+    <p id="pluses">
+        <div class="heading">Положительные стороны:</div>
+        <ul>
+            <li>Помогает разобраться с материалом самому.</li>
+            <li>Есть чем заняться дома.</li>
+            <li>Меньше нагрузки в классе.</li>
+            <li>Можно использовать как отмазку, если не хочется что-то делать.</li>
+            <li>В детстве может помочь узнать семью ближе.</li>
+        </ul>
+    </p>
+    <div class="fig">
+        <img src="images/Pluses.png" ="center" width=40% height=auto class = "board">
+        <img src="images/Pluses2.jpg" ="center" width=40% height=auto class = "board">
+    </div>
+
+    <p id="Minuses">
+        <div class="heading">Реальность:</div>
+        <ul>
+            <li>Далеко не всегда это получается все сделать быстро, из-за чего поялвяются проблемы со сном и накапливается стресс.</li>
+            <li>Как правило, дома есть более интересные занятия, на которые после домашней работы времени нет.</li>
+            <li>Приходится дома делать столько же, сколько и в классе, если не больше, но уже без учителя.</li>
+            <li>Как правило хочется сделать что угодно, только не домашнюю работу.</li>
+            <li>Иногда лучше не знать свою семью настолько близко.</li>
+        </ul>
+    </p>
+    <div class="fig">
+        <img src="images/minuses3.jpeg" ="center" width=40% height=auto class = "board">
+        <img src="images/minuses2.jpg" ="center" width=40% height=auto class = "board">
+        <img src="images/minusesjpg" ="center" width=60% height=auto class = "board">
+    </div>
+
+    <p id="Conclusion">
+        <div class="heading">Вывод:</div>
+        Несмотря на все перечисленные минусы, домашняя работа стала неотъемлимой частью нашей системы образовния и жизни каждого. 
+        Невозомжно представить, как бы школьники справлялись с учебой без нее. 
+        Не только школьники, но родители частенько вынеждены просидеть несколько вечеров после работы, чтобы помочь своим детям.
+        Благодаря этому, взаимоотношения в семьях укрепляются и количество знаний, передаваемых из поколения в поколение, увеличивается.
+    </p>
+
+
+ </main>
+ <aside class="left-sidebar">
+        <div class="navbar">
+            Навигация
+            <a href="#about">О сайте</a>
+            <a href="#pluses">Плюсы</a>
+            <a href="#Minuses">Минусы</a>
+            <a href="#Conclusion">Вывод</a>
+        </div>
+    </aside>
+ <aside class="right-sidebar">
+    <div class="botton">
+        <a href="#UP">Up!</a>
+    </div>
+ </aside>
+ <footer>Спасибо за внимание!</footer>
+</div>
+
+</body>
+</html>
+
